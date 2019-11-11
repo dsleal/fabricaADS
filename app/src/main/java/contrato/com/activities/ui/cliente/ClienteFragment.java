@@ -1,4 +1,4 @@
-package contrato.com.activities.ui.prestador;
+package contrato.com.activities.ui.cliente;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,18 +13,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import contrato.com.R;
+import contrato.com.activities.ui.cliente.ClienteViewModel;
 
-public class PrestadorFragment extends Fragment {
+public class ClienteFragment extends Fragment {
 
-    private PrestadorViewModel prestadorViewModel;
+    private ClienteViewModel clienteViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        prestadorViewModel =
-                ViewModelProviders.of(this).get(PrestadorViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_prestador, container, false);
-        final TextView textView = root.findViewById(R.id.text_prestador);
-        prestadorViewModel.getText().observe(this, new Observer<String>() {
+        clienteViewModel =
+                ViewModelProviders.of(this).get(ClienteViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_cliente, container, false);
+        final TextView textView = root.findViewById(R.id.text_cliente);
+        clienteViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

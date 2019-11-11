@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_prestador">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="contrato.com.activities.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_prestador"
+        android:name="contrato.com.activities.ui.prestador.PrestadorFragment"
+        android:label="@string/title_prestador"
+        tools:layout="@layout/fragment_prestador" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="contrato.com.activities.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_cliente"
+        android:name="contrato.com.activities.ui.cliente.ClienteFragment"
+        android:label="@string/title_cliente"
+        tools:layout="@layout/fragment_cliente" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="contrato.com.activities.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_tipoprestador"
+        android:name="contrato.com.activities.ui.tipoprestador.TipoPrestadorFragment"
+        android:label="@string/title_tipoprestador"
+        tools:layout="@layout/fragment_tipoprestador" />
+
+    <fragment
+        android:id="@+id/navigation_ordempagamento"
+        android:name="contrato.com.activities.ui.ordempagamento.OrdemPagamentoFragment"
+        android:label="@string/title_ordempagamento"
+        tools:layout="@layout/fragment_ordempagamento" />
 </navigation>
