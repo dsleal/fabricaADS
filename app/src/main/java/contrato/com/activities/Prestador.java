@@ -9,10 +9,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import contrato.com.R;
 
 public class Prestador extends AppCompatActivity {
+
+    public TextView txtNome;
+    public TextView txtEmail;
+    public List<Prestador> lista = new ArrayList<>();
+    public ListView minhaLista;
+    public List<Prestador> listUsers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +40,8 @@ public class Prestador extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
     }
 
 }
