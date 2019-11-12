@@ -14,6 +14,12 @@ public class TipoPrestador {
         this.desativado = desativado;
     }
 
+    public TipoPrestador(String descricao, boolean desativado) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.desativado = desativado;
+    }
+
     public int getCodigo() {
         return codigo;
     }

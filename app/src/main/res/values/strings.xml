@@ -12,4 +12,5 @@
     <string name="title_cliente">Cliente</string>
     <string name="title_ordempagamento">Ordem de Pagamento </string>
     <string name="title_tipoprestador">Tipo de Prestador</string>
+    <string name="txtTPDesc">Tipo de Prestador</string>
 </resources>

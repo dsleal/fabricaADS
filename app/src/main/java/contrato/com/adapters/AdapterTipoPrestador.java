@@ -54,17 +54,17 @@ public class AdapterTipoPrestador extends BaseAdapter {
         //no método
         if (view == null) {
             view = LayoutInflater.from(context).
-                    inflate(R.layout.activity_itens,                            viewGroup, false);
+                    inflate(R.layout.activity_itens_tipo_prestador,                            viewGroup, false);
         }
 
         TipoPrestador tipoPrestador = parsetItem(i);
 
-        TextView campoNome, campoEmail;
+        TextView campoDescricao;
 
-        campoNome = view.findViewById(R.id.txtName);
-        campoEmail = view.findViewById(R.id.txtEmail);
+        campoDescricao = view.findViewById(R.id.txtTpDesc);
+        //campoEmail = view.findViewById(R.id.txtEmail);
 
-        campoNome.setText(tipoPrestador.getDescricao());
+        campoDescricao.setText(tipoPrestador.getDescricao());
 
         return view;
     }
