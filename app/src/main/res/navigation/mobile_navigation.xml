@@ -28,4 +28,10 @@
         android:name="contrato.com.activities.ui.ordempagamento.OrdemPagamentoFragment"
         android:label="@string/title_ordempagamento"
         tools:layout="@layout/fragment_ordempagamento" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="contrato.com.activities.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

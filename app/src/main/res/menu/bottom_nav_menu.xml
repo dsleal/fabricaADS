@@ -21,5 +21,10 @@
         android:icon="@drawable/ic_content_add"
         android:title="@string/title_ordempagamento" />
 
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_content_add"
+        android:title="@string/title_home" />
+
 
 </menu>

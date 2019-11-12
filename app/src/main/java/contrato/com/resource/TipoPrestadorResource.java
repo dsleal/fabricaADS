@@ -13,19 +13,19 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 
 public interface TipoPrestadorResource {
-    @GET("/tipoprestador")
+    @GET("/tipoprestadores")
     Call<List<TipoPrestador>> get();
 
-    @POST("/tipoprestador")
+    @POST("/tipoprestadores")
     Call<TipoPrestador> post(@Body TipoPrestador tipoPrestador);
 
-    @PUT("/tipoprestador/{id}")
+    @PUT("/tipoprestadores/{id}")
     Call<TipoPrestador> put(@Body TipoPrestador tipoPrestador);
 
-    @DELETE("/tipoprestador/{id}")
+    @DELETE("/tipoprestadores/{id}")
     Call<Void> delete(Integer id);
 
-    @PATCH("/tipoprestador/{id}")
+    @PATCH("/tipoprestadores/{id}")
     Call<TipoPrestador> patch(Integer id, @Body TipoPrestador tipoPrestador);
 
 }

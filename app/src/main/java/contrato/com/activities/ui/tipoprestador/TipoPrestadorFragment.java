@@ -79,7 +79,6 @@ public class TipoPrestadorFragment extends Fragment {
             }
         });
 
-
         return root;
     }
 }
